@@ -1,0 +1,31 @@
+@import './vars';
+@import './mixins';
+
+.intro {
+    width: 100%;
+    text-align: center;
+    h1 {
+        font-weight: 200;
+
+        span {
+            font-weight: 600;
+            display: block;
+            color: $very-dark-blue;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        color: $grayish-blue;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@include for-phone {
+    .intro {
+        h1 {
+            font-size: 24px;
+        }
+    }
+}
